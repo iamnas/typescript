@@ -1,27 +1,49 @@
-# typescript
 
+# TypeScript Setup
 
+## Step 1
+Initialize a new Node.js project:
 
-# step 1 - npm init -y
-# step 2 - npm install --save-dev typescript 
-# step 3 - npx tsc --inti
-# step 4 - create projects
+```bash
+npm init -y
+```
 
-convert typescript to JavaScript 
-# npx tsc script.ts
-# node script.js
+## Step 2
+Install TypeScript as a development dependency:
+```bash
+npm install --save-dev typescript
+```
 
-# npx tsc script.ts --noEmitOnError
+## Step 3
+Initialize a TypeScript configuration file:
+```bash
+npx tsc --init
+```
 
+## Step 4
+Create your project files.
 
+## Converting TypeScript to JavaScript
 
-using typescript with bundler
+To compile a TypeScript file to JavaScript:
+```bash
+npx tsc script.ts
+node script.js
+```
 
-# npm create vite@latest .
+To compile with error checking but without emitting output on error:
+```bash
+npx tsc script.ts --noEmitOnError
+```
 
+## Using TypeScript with a Bundler
 
-https://www.typescriptlang.org/tsconfig#strict
+Create a new Vite project:
+```bash
+npm create vite@latest .
+```
 
+## Useful Links
 
-https://github.com/tsconfig/bases
-
+- [TypeScript Configuration Options](https://www.typescriptlang.org/tsconfig#strict)
+- [TypeScript Configurations on GitHub](https://github.com/tsconfig/bases)
